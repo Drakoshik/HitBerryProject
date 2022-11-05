@@ -6,7 +6,7 @@ public class JumpAnimation : MonoBehaviour
 {
     [SerializeField] private Transform endJumpPoint;
 
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
     private Sequence jumpSequence;
 
     private void Start()
@@ -25,7 +25,7 @@ public class JumpAnimation : MonoBehaviour
     {
         jumpSequence = DOTween.Sequence();
 
-        jumpSequence.Append(rigidbody.DOJump(endJumpPoint.position, 1,
-            1, 2f));
+        jumpSequence.Append(rigidbody.DOJump(endJumpPoint.position + new Vector3(0f,.3f,0f),
+            .5f, 1, 1.3f));
     }
 }
