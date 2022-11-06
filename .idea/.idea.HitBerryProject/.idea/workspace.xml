@@ -6,18 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="03c658c1-8029-4c65-9407-3b38b385dfe5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HitBerryProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HitBerryProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Blender.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Blender.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/apple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/apple.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/banana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/banana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/coconut.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/coconut.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/greenApple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/greenApple.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcessData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcessData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Animations/CapAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Animations/CapAnimation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Animations/JumpAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Animations/JumpAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/BlenderContentHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/BlenderContentHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/Fruits.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/Fruits.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Singleton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPool/IPooledObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPool/ObjectPooller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPool/Pool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Placing.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,7 +88,7 @@
       <workItem from="1667636038127" duration="743000" />
       <workItem from="1667645716424" duration="6551000" />
       <workItem from="1667727651918" duration="20300000" />
-      <workItem from="1667750613048" duration="6134000" />
+      <workItem from="1667750613048" duration="7678000" />
     </task>
     <servers />
   </component>

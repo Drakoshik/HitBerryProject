@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
 public class JumpAnimation : MonoBehaviour, IHitHendler
 {
+    public UnityEvent spawnEvent;
+    
     [SerializeField] private Transform endJumpPoint;
-    private CapAnimation _cap;
+    [SerializeField] private CapAnimation _cap;
 
     private new Rigidbody rigidbody;
     private Sequence jumpSequence;
@@ -15,7 +18,6 @@ public class JumpAnimation : MonoBehaviour, IHitHendler
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        _cap = FindObjectOfType<CapAnimation>();
     }
 
     private void FruitJump()
@@ -32,6 +34,13 @@ public class JumpAnimation : MonoBehaviour, IHitHendler
     public void OnRaycastReceived()
     {
         FruitJump();
+        spawnEvent?.Invoke();
     }
-    
+
+    public void OnCreate(Transform endPoint, CapAnimation cap)
+    {
+        endJumpPoint = endPoint;
+        _cap = cap;
+    }
+
 }
