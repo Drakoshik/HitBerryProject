@@ -24,6 +24,7 @@ public class InteractableObjects : MonoBehaviour
             RaycastHit hitObject;
             if (Physics.Raycast(ray, out hitObject))
             {
+                if(hitObject.collider.gameObject.GetComponent<IHitHendler>() == null) return;
                 hitObject.collider.gameObject.GetComponent<IHitHendler>().OnRaycastReceived();
             }
         }
