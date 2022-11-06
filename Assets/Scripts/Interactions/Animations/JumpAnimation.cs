@@ -7,6 +7,7 @@ using DG.Tweening;
 public class JumpAnimation : MonoBehaviour, IHitHendler
 {
     [SerializeField] private Transform endJumpPoint;
+    private CapAnimation _cap;
 
     private new Rigidbody rigidbody;
     private Sequence jumpSequence;
@@ -14,10 +15,12 @@ public class JumpAnimation : MonoBehaviour, IHitHendler
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        _cap = FindObjectOfType<CapAnimation>();
     }
 
     private void FruitJump()
     {
+        _cap.Open();
         jumpSequence = DOTween.Sequence();
         rigidbody.useGravity = false;
         jumpSequence.Append(rigidbody.DOJump(endJumpPoint.position+ new Vector3(0f,.1f,0f),

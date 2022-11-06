@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dee690068f7b0748a406f3af0513b95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 4
   _fruitColor: {r: 0.08235294, g: 1, b: 0.25490198, a: 1}
 --- !u!114 &1318150218626301433
 MonoBehaviour:

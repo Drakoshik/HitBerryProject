@@ -4,8 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(JumpAnimation))]
-public class Fruits : MonoBehaviour
+public class Fruits : MonoBehaviour, IPooledObject
 {
+    public ObjectPooller.ObjectInfo.ObjectType Type => type;
+
+    [SerializeField] private ObjectPooller.ObjectInfo.ObjectType type;
+    
     [SerializeField] private Color _fruitColor;
     private bool _used = false;
 
@@ -20,4 +24,6 @@ public class Fruits : MonoBehaviour
     {
         return _used;
     }
+
+    
 }

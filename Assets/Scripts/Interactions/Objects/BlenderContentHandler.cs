@@ -23,7 +23,7 @@ public class BlenderContentHandler : MonoBehaviour
         _mainMeshRenderer = _fruitMixObject.GetComponent<MeshRenderer>();
         _blendButton.raycastReceivedEvent.AddListener(Mix);
         _fruitList = new List<GameObject>();
-        _capHandler.Open();
+        // _capHandler.Open();
     }
 
 
@@ -31,7 +31,7 @@ public class BlenderContentHandler : MonoBehaviour
     {
         if (!other.GetComponent<Fruits>()) return;
         _glass.PutInShake();
-        print("fruit own");
+
         if (_isFirstFruit)
         {
             _mainMeshRenderer.material.color = other.GetComponent<Fruits>().GetColor();
@@ -41,7 +41,8 @@ public class BlenderContentHandler : MonoBehaviour
         else
         {
             if(!other.GetComponent<Fruits>().GetIsUsed())
-                _mainMeshRenderer.material.color += other.GetComponent<Fruits>().GetColor();
+                _mainMeshRenderer.material.color =
+                    (_mainMeshRenderer.material.color + other.GetComponent<Fruits>().GetColor()) / 2;
         }
         
         _fruitList.Add(other.gameObject);
@@ -53,10 +54,9 @@ public class BlenderContentHandler : MonoBehaviour
         if(_fruitList.Count<= 0) return;
         foreach (var fruit in _fruitList)
         {
-            fruit.SetActive(false);
+            ObjectPooller.Instance.DestroyObject(fruit);
         }
         _fruitMixObject.SetActive(true);
-        _capHandler.Close();
         _cylinder.Shake();
         _glass.Shake();
         
@@ -68,7 +68,6 @@ public class BlenderContentHandler : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         GameProcessData.Instance.IsWin(_mainMeshRenderer.material.color);
-        // _fruitMixObject.SetActive(false);
     }
     
 }

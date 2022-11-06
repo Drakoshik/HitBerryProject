@@ -14,6 +14,8 @@ public class GameProcessData : Singleton<GameProcessData>
     }
     public void IsWin(Color colorToCompare)
     {
+        print(currentLevel - 1);
+        print(CompareColor(colorToCompare, GetCurrenColor()));
         if (CompareColor(colorToCompare, GetCurrenColor())
             >= 85)
         {
@@ -24,6 +26,7 @@ public class GameProcessData : Singleton<GameProcessData>
         {
             Debug.Log("you lose");
         }
+        
     }
 
     private float CompareColor(Color colorA, Color colorB)
