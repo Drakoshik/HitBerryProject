@@ -181,7 +181,7 @@ PrefabInstance:
     - target: {fileID: 3884091670320054193, guid: 4acfb9bf5814ab24da25b7f3892fbebf, type: 3}
       propertyPath: endJumpPoint
       value: 
-      objectReference: {fileID: 1490863994}
+      objectReference: {fileID: 1097749630}
     - target: {fileID: 3884091670320054198, guid: 4acfb9bf5814ab24da25b7f3892fbebf, type: 3}
       propertyPath: _fruitColor.a
       value: 1
@@ -467,7 +467,7 @@ PrefabInstance:
     - target: {fileID: 1318150218626301433, guid: ddb72a356cb5b5b40be3d88d2116fec4, type: 3}
       propertyPath: endJumpPoint
       value: 
-      objectReference: {fileID: 1490863994}
+      objectReference: {fileID: 1097749630}
     - target: {fileID: 1567740710334995174, guid: ddb72a356cb5b5b40be3d88d2116fec4, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -632,6 +632,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd5f85040951cdd478a15df7be703d4b, type: 3}
+--- !u!4 &1097749630 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2843224496183302588, guid: cd5f85040951cdd478a15df7be703d4b, type: 3}
+  m_PrefabInstance: {fileID: 1097749629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1131404023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -693,11 +698,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acb8028c6738c8642b20c2f467061501, type: 3}
---- !u!4 &1490863994 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1614596389389648794, guid: cd5f85040951cdd478a15df7be703d4b, type: 3}
-  m_PrefabInstance: {fileID: 1097749629}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1506332571
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 1506332572}
   - component: {fileID: 1506332573}
   m_Layer: 0
-  m_Name: GameData
+  m_Name: GameProcessData
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -744,9 +744,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dontDestroy: 0
   _winColors:
+  - {r: 0.38339147, g: 0.8018868, b: 0.16264686, a: 1}
   - {r: 1, g: 0.4198113, b: 0.4198113, a: 1}
   - {r: 0.8301887, g: 0.63533187, b: 0.105731584, a: 1}
-  - {r: 0.685313, g: 1, b: 0.41960788, a: 1}
 --- !u!1001 &1531370887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -920,7 +920,7 @@ PrefabInstance:
     - target: {fileID: 1318150218626301433, guid: 0b96ddbe513234d458e830ac2fdca579, type: 3}
       propertyPath: endJumpPoint
       value: 
-      objectReference: {fileID: 1490863994}
+      objectReference: {fileID: 1097749630}
     - target: {fileID: 1567740710334995174, guid: 0b96ddbe513234d458e830ac2fdca579, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -985,7 +985,7 @@ PrefabInstance:
     - target: {fileID: 655841982272281718, guid: b7c5c36466445c4469641c9492a0b1c3, type: 3}
       propertyPath: endJumpPoint
       value: 
-      objectReference: {fileID: 1490863994}
+      objectReference: {fileID: 1097749630}
     - target: {fileID: 1049547292368829336, guid: b7c5c36466445c4469641c9492a0b1c3, type: 3}
       propertyPath: m_RootOrder
       value: 9

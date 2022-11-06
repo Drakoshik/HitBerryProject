@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03c658c1-8029-4c65-9407-3b38b385dfe5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcessData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HitBerryProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HitBerryProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Blender.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Blender.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcessData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractableObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractableObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/FruitsAnimations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/FruitsAnimations/JumpAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/FruitsAnimations/JumpAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/BlendButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/BlendButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/BlenderContentHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/BlenderContentHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/Fruits.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/Fruits.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameProcessData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/Animations/CapAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/InteractableObjects.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/Fruits.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -86,7 +89,8 @@
       <updated>1667492271687</updated>
       <workItem from="1667636038127" duration="743000" />
       <workItem from="1667645716424" duration="6551000" />
-      <workItem from="1667727651918" duration="17078000" />
+      <workItem from="1667727651918" duration="20300000" />
+      <workItem from="1667750613048" duration="1063000" />
     </task>
     <servers />
   </component>
