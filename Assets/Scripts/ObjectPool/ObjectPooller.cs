@@ -13,9 +13,12 @@ public class ObjectPooller : Singleton<ObjectPooller>
         {
             Apple,
             Banana,
-            Berry,
+            Cherries,
             Coconuts,
-            GreenApple
+            GreenApple,
+            Eggplant,
+            Orange,
+            Tomato
         }
 
         public ObjectType Type;

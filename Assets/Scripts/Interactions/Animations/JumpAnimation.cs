@@ -7,7 +7,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody))]
 public class JumpAnimation : MonoBehaviour, IHitHendler
 {
-    public UnityEvent spawnEvent;
+    [HideInInspector] public UnityEvent spawnEvent;
     
     [SerializeField] private Transform endJumpPoint;
     [SerializeField] private CapAnimation _cap;
@@ -43,4 +43,8 @@ public class JumpAnimation : MonoBehaviour, IHitHendler
         _cap = cap;
     }
 
+    private void OnDisable()
+    {
+        spawnEvent.RemoveAllListeners();
+    }
 }

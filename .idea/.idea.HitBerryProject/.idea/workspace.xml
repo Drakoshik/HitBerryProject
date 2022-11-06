@@ -6,8 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="03c658c1-8029-4c65-9407-3b38b385dfe5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HitBerryProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HitBerryProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Blender.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Blender.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcessData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcessData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Animations/JumpAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Animations/JumpAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractableObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/HitController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/InteractableObjects.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/HitController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/BlenderContentHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/BlenderContentHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPool/ObjectPooller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPool/ObjectPooller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Placing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Placing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +26,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d3dacd00ce441dc8c61d528a2193088158400/2d/cd47d138/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/ArrowAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/GameProcessData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/Animations/CapAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/InteractableObjects.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/HitController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/Fruits.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPool/IPooledObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectPool/ObjectPooller.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,7 +99,8 @@
       <workItem from="1667636038127" duration="743000" />
       <workItem from="1667645716424" duration="6551000" />
       <workItem from="1667727651918" duration="20300000" />
-      <workItem from="1667750613048" duration="7678000" />
+      <workItem from="1667750613048" duration="9520000" />
+      <workItem from="1667761783313" duration="7327000" />
     </task>
     <servers />
   </component>

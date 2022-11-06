@@ -61,6 +61,7 @@ public class BlenderContentHandler : MonoBehaviour
         _glass.Shake();
         
         _blendButton.raycastReceivedEvent.RemoveAllListeners();
+        GameProcessData.Instance.DisableHits();
         StartCoroutine(CR_CheckWin());
     }
 
