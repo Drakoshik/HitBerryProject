@@ -6,19 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="03c658c1-8029-4c65-9407-3b38b385dfe5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HitBerryProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HitBerryProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/Arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Media/Arrow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/cherries.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/cherries.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/greenApple.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/greenApple.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/ArrowAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/ArrowAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcessData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcess.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcessData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcess.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/BlenderContentHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Objects/BlenderContentHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPool/ObjectPooller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPool/ObjectPooller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Placing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Placing.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thoth/Cartoon UI Pack/Material/Minimalist Cartoon UI Pack Sliced.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Thoth/Cartoon UI Pack/Material/Minimalist Cartoon UI Pack Sliced.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/ResultPopupAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/ResultPopupAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcess.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/HitController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/HitController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +95,7 @@
       <workItem from="1667727651918" duration="20300000" />
       <workItem from="1667750613048" duration="9520000" />
       <workItem from="1667761783313" duration="7978000" />
-      <workItem from="1667801554178" duration="14042000" />
+      <workItem from="1667801554178" duration="17748000" />
     </task>
     <servers />
   </component>

@@ -71,7 +71,7 @@ public class GameProcess : Singleton<GameProcess>
     {
         DisableHits();
         if (CompareColor(colorToCompare, GetCurrenColor())
-            >= 85)
+            >= 84)
         {
             _nextButton.gameObject.SetActive(true);
             _resetButton.gameObject.SetActive(true);
@@ -109,7 +109,7 @@ public class GameProcess : Singleton<GameProcess>
     }
     private void OnResetClick()
     {
-        ShowColor(false);
+        ShowColor(true);
         _resultPopup.Hide();
         EnableHits();
     }

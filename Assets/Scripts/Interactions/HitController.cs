@@ -15,7 +15,6 @@ public class HitController : MonoBehaviour
             if (Physics.Raycast(ray, out var hitObject))
             {
                 if(hitObject.collider.gameObject.GetComponent<IHitHendler>() == null) return;
-                print("slkjdhtlnsjhtglnsnd");
                 hitObject.collider.gameObject.GetComponent<IHitHendler>().OnRaycastReceived();
             }
         }
