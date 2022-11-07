@@ -27,7 +27,7 @@ public class ObjectPooller : Singleton<ObjectPooller>
         public int StartCount;
     }
 
-     [SerializeField] private List<ObjectInfo> _objectsInfo;
+    [SerializeField] private List<ObjectInfo> _objectsInfo;
 
     private Dictionary<ObjectInfo.ObjectType, Pool> _pools;
 

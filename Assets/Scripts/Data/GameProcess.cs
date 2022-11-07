@@ -70,8 +70,9 @@ public class GameProcess : Singleton<GameProcess>
     public void IsWin(Color colorToCompare)
     {
         DisableHits();
-        if (CompareColor(colorToCompare, GetCurrenColor())
-            >= 84)
+        if (Math.Round(CompareColor(colorToCompare, GetCurrenColor()), 0,
+                MidpointRounding.ToEven)
+            >= 85)
         {
             _nextButton.gameObject.SetActive(true);
             _resetButton.gameObject.SetActive(true);
@@ -89,7 +90,7 @@ public class GameProcess : Singleton<GameProcess>
             _resetButton.gameObject.SetActive(true);
 
             _percentageText.text = Math.Round(CompareColor(colorToCompare, GetCurrenColor()), 0,
-                                        MidpointRounding.AwayFromZero).ToString() + 
+                                        MidpointRounding.ToEven).ToString() + 
                                             "%";
             _resultText.text = "You LOSE";
             _resultPopup.Show();
