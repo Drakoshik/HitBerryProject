@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4590957084168906479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4590957084168906473}
+  - component: {fileID: 4590957084168906472}
+  m_Layer: 0
+  m_Name: ObjectsPooller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4590957084168906473
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4590957084168906479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8030845, y: 0.31771153, z: -7.011063}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4590957084168906472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4590957084168906479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da84af07bdb8c63448b9d64d3761c972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroy: 1
+  _objectsInfo:
+  - Type: 0
+    Prefab: {fileID: 2200689506131099740, guid: ddb72a356cb5b5b40be3d88d2116fec4, type: 3}
+    StartCount: 10
+  - Type: 1
+    Prefab: {fileID: 4118112063151532924, guid: 4acfb9bf5814ab24da25b7f3892fbebf, type: 3}
+    StartCount: 10
+  - Type: 2
+    Prefab: {fileID: 3971840836314554797, guid: a6b2702a6c1894246a3ef1fb2111c36f, type: 3}
+    StartCount: 10
+  - Type: 3
+    Prefab: {fileID: 422050970976756002, guid: b7c5c36466445c4469641c9492a0b1c3, type: 3}
+    StartCount: 10
+  - Type: 4
+    Prefab: {fileID: 2200689506131099740, guid: 0b96ddbe513234d458e830ac2fdca579, type: 3}
+    StartCount: 10
+  - Type: 5
+    Prefab: {fileID: 7969499260836195638, guid: e1ff99d5ec745e8498904ce962e4605c, type: 3}
+    StartCount: 10
+  - Type: 6
+    Prefab: {fileID: 1763874576754713390, guid: ffe7ab49e439a4541bb014c4c94a530d, type: 3}
+    StartCount: 10
+  - Type: 7
+    Prefab: {fileID: 8228552204967404589, guid: 219e15cb979dfde4ea0dd72ad2888705, type: 3}
+    StartCount: 10

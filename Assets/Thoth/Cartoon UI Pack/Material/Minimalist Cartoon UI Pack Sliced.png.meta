@@ -1422,7 +1422,7 @@ TextureImporter:
         height: 77
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 22, y: 24, z: 19, w: 18}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2430,7 +2430,7 @@ TextureImporter:
         height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 7, z: 6, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2447,11 +2447,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1319
         y: 846
-        width: 60
+        width: 62
         height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 6, z: 8, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2913,7 +2913,7 @@ TextureImporter:
         height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 6, y: 4, z: 4, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -3060,7 +3060,7 @@ TextureImporter:
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 6, z: 6, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -4034,7 +4034,6 @@ TextureImporter:
       MnimalistToon_BKG05: 21300046
       MnimalistToon_SQUARE04: 21300110
       MnimalistToon_SLOT_Bege01: 21300078
-      Minimalist Cartoon UI Pack 2_130: 21300298
       MnimalistToon_SLOT_Green01: 21300086
       MnimalistToon_BKG06: 21300048
       MnimalistToon_BKG03: 21300042
@@ -4171,11 +4170,12 @@ TextureImporter:
       MnimalistToon_BOTTON13: 21300218
       MnimalistToon_Silhouette03: 21300210
       MnimalistToon_BALLOON: 21300248
+      Minimalist Cartoon UI Pack 2_130: 21300298
       MnimalistToon_SLOT_Brown01: 21300128
       MnimalistToon_BOTTON06: 21300196
       MnimalistToon_CIRCLE03: 21300116
-      MnimalistToon_BOTTON03: 21300174
       MnimalistToon_Silhouette02: 21300208
+      MnimalistToon_BOTTON03: 21300174
       Minimalist Cartoon UI Pack_16: 21300032
       MnimalistToon_BOTTON19: 21300236
       MnimalistToon_SLOT_Indigo01: 21300060

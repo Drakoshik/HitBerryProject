@@ -18,12 +18,12 @@ public class BlenderContentHandler : MonoBehaviour
     private MeshRenderer _mainMeshRenderer;
 
     private bool _isFirstFruit = true;
+    private bool _isMixing = false; 
     void Start()
     {
         _mainMeshRenderer = _fruitMixObject.GetComponent<MeshRenderer>();
         _blendButton.raycastReceivedEvent.AddListener(Mix);
         _fruitList = new List<GameObject>();
-        // _capHandler.Open();
     }
 
 
@@ -44,14 +44,18 @@ public class BlenderContentHandler : MonoBehaviour
                 _mainMeshRenderer.material.color =
                     (_mainMeshRenderer.material.color + other.GetComponent<Fruits>().GetColor()) / 2;
         }
+
+        if (!_isMixing) _fruitList.Add(other.gameObject);
+        else ObjectPooller.Instance.DestroyObject(other.gameObject);
         
-        _fruitList.Add(other.gameObject);
+
     }
 
 
     private void Mix()
     {
         if(_fruitList.Count<= 0) return;
+        _isMixing = true;
         foreach (var fruit in _fruitList)
         {
             ObjectPooller.Instance.DestroyObject(fruit);
@@ -60,15 +64,16 @@ public class BlenderContentHandler : MonoBehaviour
         _cylinder.Shake();
         _glass.Shake();
         
-        _blendButton.raycastReceivedEvent.RemoveAllListeners();
-        GameProcessData.Instance.DisableHits();
         StartCoroutine(CR_CheckWin());
     }
 
     private IEnumerator CR_CheckWin()
     {
         yield return new WaitForSeconds(2f);
-        GameProcessData.Instance.IsWin(_mainMeshRenderer.material.color);
+        GameProcess.Instance.IsWin(_mainMeshRenderer.material.color);
+        yield return new WaitForSeconds(1f);
+        _isMixing = false;
+        _fruitMixObject.SetActive(false);
     }
     
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ObjectPooller : Singleton<ObjectPooller>
 {
@@ -26,9 +27,11 @@ public class ObjectPooller : Singleton<ObjectPooller>
         public int StartCount;
     }
 
-    [SerializeField] private List<ObjectInfo> objectsInfo;
+     [SerializeField] private List<ObjectInfo> _objectsInfo;
 
-    private Dictionary<ObjectInfo.ObjectType, Pool> pools;
+    private Dictionary<ObjectInfo.ObjectType, Pool> _pools;
+
+    private List<GameObject> _containers;
 
     public override void Awake()
     {
@@ -37,22 +40,29 @@ public class ObjectPooller : Singleton<ObjectPooller>
         InitPool();
     }
 
+    private void OnDisable()
+    {
+        print("sdlfrkghjsghsdklflbnlkjzdf");
+    }
+
     private void InitPool()
     {
-        pools = new Dictionary<ObjectInfo.ObjectType, Pool>();
+        _pools = new Dictionary<ObjectInfo.ObjectType, Pool>();
         var empty = new GameObject();
+        _containers = new List<GameObject>();
 
-        foreach (var obj in objectsInfo)
+        foreach (var obj in _objectsInfo)
         {
             var container = Instantiate(empty, transform, false);
             container.name = obj.Type.ToString();
+            _containers.Add(container);
 
-            pools[obj.Type] = new Pool(container.transform);
+            _pools[obj.Type] = new Pool(container.transform);
 
             for (int i = 0; i < obj.StartCount; i++)
             {
                 var go = InstantiateObject(obj.Type, container.transform);
-                pools[obj.Type].Objects.Enqueue(go);
+                _pools[obj.Type].Objects.Enqueue(go);
             }
 
         }
@@ -61,25 +71,38 @@ public class ObjectPooller : Singleton<ObjectPooller>
 
     private GameObject InstantiateObject(ObjectInfo.ObjectType type, Transform parent)
     {
-        var go = Instantiate(objectsInfo.Find(x => x.Type == type).Prefab, parent);
+        var go = Instantiate(_objectsInfo.Find(x => x.Type == type).Prefab, parent);
         go.SetActive(false);
         return go;
     }
 
     public GameObject GetObject(ObjectInfo.ObjectType type)
     {
-        var obj = pools[type].Objects.Count > 0
-            ? pools[type].Objects.Dequeue()
-            : InstantiateObject(type, pools[type].Container);
+        var obj = _pools[type].Objects.Count > 0
+            ? _pools[type].Objects.Dequeue()
+            : InstantiateObject(type, _pools[type].Container);
         
         obj.SetActive(true);
         return obj;
     }
     
     public void DestroyObject(GameObject obj){
-        pools[obj.GetComponent<IPooledObject>().Type].Objects.Enqueue(obj);
+        _pools[obj.GetComponent<IPooledObject>().Type].Objects.Enqueue(obj);
         obj.SetActive(false);
-        
     }
-    
+
+    public void DestroyAll()
+    {
+        foreach (var obj in _objectsInfo)
+        {
+            for (var i = 0; i < _containers[_objectsInfo.IndexOf(obj)].transform.childCount; i++)
+            {
+                var child = _containers[_objectsInfo.IndexOf(obj)].transform.GetChild(i);
+                if (!child.gameObject.activeInHierarchy) continue;
+                _pools[child.GetComponent<IPooledObject>().Type].Objects.Enqueue(child.gameObject);
+                child.gameObject.SetActive(false);
+            }
+        }
+
+    }
 }

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class ArrowAnimation : MonoBehaviour
 {
+    [HideInInspector]
     public Button _button;
     private Sequence _arrowSequence;
 
@@ -22,9 +23,10 @@ public class ArrowAnimation : MonoBehaviour
         _arrowSequence.Kill();
 
         _arrowSequence = DOTween.Sequence();
-        // _arrowSequence.Append(transform.DOShakeScale(1, new Vector3(.2f, 0, 0), randomness: 5).SetLoops(-1));
-        _arrowSequence.Append(transform.DOScale(new Vector3(1.2f, 1f, 1f), 1));
-        _arrowSequence.Append(transform.DOScale(new Vector3(1.0f, 1f, 1f), 1)).SetLoops(-1);
+        _arrowSequence.Append(transform.DOScale(new Vector3(1.2f, 1f, 1f), 1).
+            From(new Vector3(1.0f, 1f, 1f)));
+        _arrowSequence.Append(transform.DOScale(new Vector3(1.0f, 1f, 1f), 1).
+            From(new Vector3(1.2f, 1f, 1f))).SetLoops(-1);
     }
 
     public void Show()

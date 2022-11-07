@@ -9,8 +9,9 @@ public class Placing : MonoBehaviour
     [SerializeField] private Transform _endJumpPoint;
 
     [SerializeField] private ObjectPooller.ObjectInfo.ObjectType _fruitType;
+    
 
-    private void Start()
+    private void OnEnable()
     {
         var fruit = ObjectPooller.Instance.GetObject(_fruitType);
         fruit.transform.position = transform.position;
@@ -35,5 +36,14 @@ public class Placing : MonoBehaviour
         fruitAnimationComponent.OnCreate(_endJumpPoint, _capAnimation);
         fruitAnimationComponent.spawnEvent.AddListener(SpawnNewFruit);
 
+    }
+
+    private void OnDisable()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            Transform child = transform.GetChild(i);
+            ObjectPooller.Instance.DestroyObject(child.gameObject);
+        }
     }
 }
