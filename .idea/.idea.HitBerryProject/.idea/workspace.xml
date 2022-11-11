@@ -7,9 +7,11 @@
     <list default="true" id="03c658c1-8029-4c65-9407-3b38b385dfe5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HitBerryProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HitBerryProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animations/ResultPopupAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animations/ResultPopupAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/GameProcess.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectPool/ObjectPooller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectPool/ObjectPooller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/UnityServicesProjectConfiguration.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +98,8 @@
       <workItem from="1667727651918" duration="20300000" />
       <workItem from="1667750613048" duration="9520000" />
       <workItem from="1667761783313" duration="7978000" />
-      <workItem from="1667801554178" duration="19839000" />
+      <workItem from="1667801554178" duration="20266000" />
+      <workItem from="1668087585582" duration="770000" />
     </task>
     <servers />
   </component>

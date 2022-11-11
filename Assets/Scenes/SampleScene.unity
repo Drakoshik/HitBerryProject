@@ -7438,6 +7438,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ObjectsPooller
       objectReference: {fileID: 0}
+    - target: {fileID: 4590957084168906479, guid: cd550ce93c8981e4da3bde4e83e96d55, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd550ce93c8981e4da3bde4e83e96d55, type: 3}
 --- !u!1001 &1599718656

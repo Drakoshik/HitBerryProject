@@ -40,10 +40,6 @@ public class ObjectPooller : Singleton<ObjectPooller>
         InitPool();
     }
 
-    private void OnDisable()
-    {
-        print("sdlfrkghjsghsdklflbnlkjzdf");
-    }
 
     private void InitPool()
     {
