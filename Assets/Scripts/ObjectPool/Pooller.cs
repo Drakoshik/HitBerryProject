@@ -36,6 +36,8 @@ public class Pooller : MonoBehaviour
     
     private IEnumerator CR_SpawnNewFruit()
     {
+        var fruitAnimationComponentOld = currentFruit.GetComponent<JumpAnimation>();
+        fruitAnimationComponentOld.spawnEvent.RemoveAllListeners();
         yield return new WaitForSeconds(.5f);
         var fruit = pool.GetFreeElement();
         currentFruit = fruit;
