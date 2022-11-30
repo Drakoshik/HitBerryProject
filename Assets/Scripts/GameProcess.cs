@@ -160,7 +160,6 @@ public class GameProcess : Singleton<GameProcess>
 
     private void ChangeFruitSet()
     {
-        ObjectPooller.Instance.DestroyAll();
         foreach (var obj in _spawns)
         {
             obj.SetActive(false);

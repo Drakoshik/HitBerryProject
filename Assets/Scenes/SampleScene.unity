@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44068632, g: 0.4893434, b: 0.5694738, a: 1}
+  m_IndirectSpecularColor: {r: 0.4406856, g: 0.489343, b: 0.569473, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1862,6 +1862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 411612552}
   - component: {fileID: 411612553}
+  - component: {fileID: 411612554}
   m_Layer: 0
   m_Name: BananaPlace
   m_TagString: Untagged
@@ -1891,7 +1892,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411612551}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4700c57531497f4692cc351a28acaa1, type: 3}
   m_Name: 
@@ -1899,6 +1900,21 @@ MonoBehaviour:
   _capAnimation: {fileID: 195136928}
   _endJumpPoint: {fileID: 1097749630}
   _fruitType: 1
+--- !u!114 &411612554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411612551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0734a853473994aa906d5629d547c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3884091670320054198, guid: 4acfb9bf5814ab24da25b7f3892fbebf, type: 3}
+  capAnimation: {fileID: 195136928}
+  endJumpPoint: {fileID: 1097749630}
 --- !u!1 &418354623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,6 +1925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 418354624}
   - component: {fileID: 418354625}
+  - component: {fileID: 418354626}
   m_Layer: 0
   m_Name: GreenApplePlace
   m_TagString: Untagged
@@ -1938,7 +1955,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418354623}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4700c57531497f4692cc351a28acaa1, type: 3}
   m_Name: 
@@ -1946,6 +1963,21 @@ MonoBehaviour:
   _capAnimation: {fileID: 195136928}
   _endJumpPoint: {fileID: 1097749630}
   _fruitType: 4
+--- !u!114 &418354626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418354623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0734a853473994aa906d5629d547c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1318150218626301190, guid: 0b96ddbe513234d458e830ac2fdca579, type: 3}
+  capAnimation: {fileID: 195136928}
+  endJumpPoint: {fileID: 1097749630}
 --- !u!4 &426140416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4177520059457206, guid: 46276d824911b4f4f84daca1f9c6d128, type: 3}
@@ -2135,6 +2167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 479770459}
   - component: {fileID: 479770458}
+  - component: {fileID: 479770460}
   m_Layer: 0
   m_Name: OrangePlace
   m_TagString: Untagged
@@ -2149,7 +2182,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479770457}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4700c57531497f4692cc351a28acaa1, type: 3}
   m_Name: 
@@ -2172,6 +2205,21 @@ Transform:
   m_Father: {fileID: 529925901}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479770460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479770457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0734a853473994aa906d5629d547c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1494037586421980793, guid: ffe7ab49e439a4541bb014c4c94a530d, type: 3}
+  capAnimation: {fileID: 195136928}
+  endJumpPoint: {fileID: 1097749630}
 --- !u!1001 &479901028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3592,6 +3640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 686413665}
   - component: {fileID: 686413664}
+  - component: {fileID: 686413666}
   m_Layer: 0
   m_Name: TomatoPlace
   m_TagString: Untagged
@@ -3606,7 +3655,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686413663}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4700c57531497f4692cc351a28acaa1, type: 3}
   m_Name: 
@@ -3629,6 +3678,21 @@ Transform:
   m_Father: {fileID: 529925901}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &686413666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686413663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0734a853473994aa906d5629d547c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 9147049934839339363, guid: 219e15cb979dfde4ea0dd72ad2888705, type: 3}
+  capAnimation: {fileID: 195136928}
+  endJumpPoint: {fileID: 1097749630}
 --- !u!4 &692628062 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4239891159395368, guid: 91e43a60a5017b44e950c8af76db419a, type: 3}
@@ -4554,6 +4618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 925595247}
   - component: {fileID: 925595248}
+  - component: {fileID: 925595249}
   m_Layer: 0
   m_Name: ApplePlace
   m_TagString: Untagged
@@ -4583,7 +4648,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 925595246}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4700c57531497f4692cc351a28acaa1, type: 3}
   m_Name: 
@@ -4591,6 +4656,21 @@ MonoBehaviour:
   _capAnimation: {fileID: 195136928}
   _endJumpPoint: {fileID: 1097749630}
   _fruitType: 0
+--- !u!114 &925595249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925595246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0734a853473994aa906d5629d547c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1318150218626301190, guid: ddb72a356cb5b5b40be3d88d2116fec4, type: 3}
+  capAnimation: {fileID: 195136928}
+  endJumpPoint: {fileID: 1097749630}
 --- !u!1001 &936985113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4927,6 +5007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 972869159}
   - component: {fileID: 972869160}
+  - component: {fileID: 972869161}
   m_Layer: 0
   m_Name: CoconutPlace
   m_TagString: Untagged
@@ -4956,7 +5037,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972869158}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4700c57531497f4692cc351a28acaa1, type: 3}
   m_Name: 
@@ -4964,6 +5045,21 @@ MonoBehaviour:
   _capAnimation: {fileID: 195136928}
   _endJumpPoint: {fileID: 1097749630}
   _fruitType: 3
+--- !u!114 &972869161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972869158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0734a853473994aa906d5629d547c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 655841982272281713, guid: b7c5c36466445c4469641c9492a0b1c3, type: 3}
+  capAnimation: {fileID: 195136928}
+  endJumpPoint: {fileID: 1097749630}
 --- !u!1001 &975725878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6106,6 +6202,54 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -70}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!1 &1214074184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1214074186}
+  - component: {fileID: 1214074185}
+  m_Layer: 5
+  m_Name: InGameMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1214074185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214074184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 5df816f6e0bb6d94d951a7aeee01a89e, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 6db75938f0f88644cb891a7e95536349, type: 3}
+  m_SortingOrder: 0
+--- !u!4 &1214074186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214074184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1224846989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7995,6 +8139,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4631730319309726, guid: 5a2b2aefafe7a2f4bb79271e2b6b2e62, type: 3}
   m_PrefabInstance: {fileID: 1703181042}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1719605578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1719605579}
+  - component: {fileID: 1719605580}
+  m_Layer: 0
+  m_Name: testPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1719605579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719605578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 217.84364, y: 215.89178, z: 101.64421}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1719605580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719605578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0734a853473994aa906d5629d547c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3884091670320054198, guid: 4acfb9bf5814ab24da25b7f3892fbebf, type: 3}
+  capAnimation: {fileID: 0}
+  endJumpPoint: {fileID: 0}
 --- !u!1001 &1736280530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8772,6 +8963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889608679}
   - component: {fileID: 1889608680}
+  - component: {fileID: 1889608681}
   m_Layer: 0
   m_Name: EggPlantPlace
   m_TagString: Untagged
@@ -8801,7 +8993,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889608678}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4700c57531497f4692cc351a28acaa1, type: 3}
   m_Name: 
@@ -8809,6 +9001,21 @@ MonoBehaviour:
   _capAnimation: {fileID: 195136928}
   _endJumpPoint: {fileID: 1097749630}
   _fruitType: 5
+--- !u!114 &1889608681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889608678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0734a853473994aa906d5629d547c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7086467389842002026, guid: e1ff99d5ec745e8498904ce962e4605c, type: 3}
+  capAnimation: {fileID: 195136928}
+  endJumpPoint: {fileID: 1097749630}
 --- !u!1 &1905929375
 GameObject:
   m_ObjectHideFlags: 0
@@ -9310,6 +9517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2048048088}
   - component: {fileID: 2048048087}
+  - component: {fileID: 2048048089}
   m_Layer: 0
   m_Name: CherriesPlace
   m_TagString: Untagged
@@ -9324,7 +9532,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048048086}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4700c57531497f4692cc351a28acaa1, type: 3}
   m_Name: 
@@ -9347,6 +9555,21 @@ Transform:
   m_Father: {fileID: 529925901}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 84.065, z: 0}
+--- !u!114 &2048048089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048048086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0734a853473994aa906d5629d547c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2250223792702998683, guid: a6b2702a6c1894246a3ef1fb2111c36f, type: 3}
+  capAnimation: {fileID: 195136928}
+  endJumpPoint: {fileID: 1097749630}
 --- !u!1 &2055206981
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class BlenderContentHandler : MonoBehaviour
 {
@@ -46,7 +43,7 @@ public class BlenderContentHandler : MonoBehaviour
         }
 
         if (!_isMixing) _fruitList.Add(other.gameObject);
-        else ObjectPooller.Instance.DestroyObject(other.gameObject);
+        else ObjectPooller.Instance.HideObject(other.gameObject);
         
 
     }
@@ -58,7 +55,7 @@ public class BlenderContentHandler : MonoBehaviour
         _isMixing = true;
         foreach (var fruit in _fruitList)
         {
-            ObjectPooller.Instance.DestroyObject(fruit);
+            ObjectPooller.Instance.HideObject(fruit);
         }
         _fruitMixObject.SetActive(true);
         _cylinder.Shake();

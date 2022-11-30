@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Placing : MonoBehaviour
@@ -43,7 +41,7 @@ public class Placing : MonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
         {
             Transform child = transform.GetChild(i);
-            ObjectPooller.Instance.DestroyObject(child.gameObject);
+            ObjectPooller.Instance.HideObject(child.gameObject);
         }
     }
 }

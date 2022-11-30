@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
+using UnityEngine.Pool;
 using UnityEngine.Serialization;
 
 public class ObjectPooller : Singleton<ObjectPooller>
@@ -33,16 +35,32 @@ public class ObjectPooller : Singleton<ObjectPooller>
 
     private List<GameObject> _containers;
 
+    // [field: SerializeField] private ObjectPool<GameObject> _pool;
+
     public override void Awake()
     {
         base.Awake();
         
         InitPool();
-    }
 
-    private void OnDisable()
-    {
-        print("sdlfrkghjsghsdklflbnlkjzdf");
+        // _pool = new ObjectPool<GameObject>(createFunc: (() => new GameObject("Pooled Object")),
+        //     actionOnGet: (obj) => obj.SetActive(true),
+        //     actionOnRelease: (obj) => obj.SetActive(false),
+        //     actionOnDestroy: (obj) => Destroy(obj),
+        //     collectionCheck: false,
+        //     defaultCapacity: 10,
+        //     maxSize: 100);
+        //
+        // var obj = _pool.Get();
+        // var obj1 = _pool.Get();
+        // var obj2 = _pool.Get();
+        // var obj3 = _pool.Get();
+        // var obj4 = _pool.Get();
+        // _pool.Release(obj);
+        // _pool.Release(obj1);
+        // _pool.Release(obj2);
+        //
+        // _pool.Dispose();
     }
 
     private void InitPool()
@@ -64,7 +82,6 @@ public class ObjectPooller : Singleton<ObjectPooller>
                 var go = InstantiateObject(obj.Type, container.transform);
                 _pools[obj.Type].Objects.Enqueue(go);
             }
-
         }
         Destroy(empty);
     }
@@ -86,12 +103,12 @@ public class ObjectPooller : Singleton<ObjectPooller>
         return obj;
     }
     
-    public void DestroyObject(GameObject obj){
+    public void HideObject(GameObject obj){
         _pools[obj.GetComponent<IPooledObject>().Type].Objects.Enqueue(obj);
         obj.SetActive(false);
     }
 
-    public void DestroyAll()
+    public void HideAll()
     {
         foreach (var obj in _objectsInfo)
         {
@@ -103,6 +120,5 @@ public class ObjectPooller : Singleton<ObjectPooller>
                 child.gameObject.SetActive(false);
             }
         }
-
     }
 }
