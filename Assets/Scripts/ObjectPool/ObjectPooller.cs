@@ -86,12 +86,12 @@ public class ObjectPooller : Singleton<ObjectPooller>
         return obj;
     }
     
-    public void DestroyObject(GameObject obj){
+    public void HideObject(GameObject obj){
         _pools[obj.GetComponent<IPooledObject>().Type].Objects.Enqueue(obj);
         obj.SetActive(false);
     }
 
-    public void DestroyAll()
+    public void HideAll()
     {
         foreach (var obj in _objectsInfo)
         {
