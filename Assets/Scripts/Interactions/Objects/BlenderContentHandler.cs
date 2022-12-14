@@ -43,8 +43,7 @@ public class BlenderContentHandler : MonoBehaviour
         }
 
         if (!_isMixing) _fruitList.Add(other.gameObject);
-        else ObjectPooller.Instance.HideObject(other.gameObject);
-        
+        else other.gameObject.SetActive(false);
 
     }
 
@@ -55,7 +54,7 @@ public class BlenderContentHandler : MonoBehaviour
         _isMixing = true;
         foreach (var fruit in _fruitList)
         {
-            ObjectPooller.Instance.HideObject(fruit);
+            fruit.SetActive(false);
         }
         _fruitMixObject.SetActive(true);
         _cylinder.Shake();
@@ -71,6 +70,7 @@ public class BlenderContentHandler : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _isMixing = false;
         _fruitMixObject.SetActive(false);
+        _fruitList.Clear();
     }
     
 }

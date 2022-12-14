@@ -6,12 +6,11 @@ using UnityEngine.Serialization;
 
 public class Pooller : MonoBehaviour
 {
-    [field: SerializeField] private ObjectPool<Fruits> pool;
-
     [SerializeField] private Fruits prefab;
     [SerializeField] private CapAnimation capAnimation;
     [SerializeField] private Transform endJumpPoint;
 
+    private ObjectPool<Fruits> pool;
     private Fruits currentFruit;
     
 
@@ -36,13 +35,13 @@ public class Pooller : MonoBehaviour
     
     private IEnumerator CR_SpawnNewFruit()
     {
-        var fruitAnimationComponentOld = currentFruit.GetComponent<JumpAnimation>();
-        fruitAnimationComponentOld.spawnEvent.RemoveAllListeners();
+        var fruitAnimationComponent = currentFruit.GetComponent<JumpAnimation>();
+        fruitAnimationComponent.spawnEvent.RemoveAllListeners();
         yield return new WaitForSeconds(.5f);
         var fruit = pool.GetFreeElement();
         currentFruit = fruit;
         fruit.transform.position = transform.position;
-        var fruitAnimationComponent = fruit.GetComponent<JumpAnimation>();
+        fruitAnimationComponent = fruit.GetComponent<JumpAnimation>();
         fruitAnimationComponent.OnCreate(endJumpPoint, capAnimation);
         fruitAnimationComponent.spawnEvent.AddListener(SpawnNewFruit);
 

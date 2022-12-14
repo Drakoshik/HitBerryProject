@@ -16,8 +16,9 @@ public class ObjectPool<T> where T : MonoBehaviour
     public ObjectPool(T prefab, int count, Transform mainContainer, bool autoExpand)
     {
         this.prefab = prefab;
-        var empty = new GameObject();
-        container = Object.Instantiate(empty, mainContainer);
+        // var empty = new GameObject();
+        // empty.name = "kajhg";
+        container = Object.Instantiate(new GameObject(), mainContainer);
         container.name = prefab.name;
         this.autoExpand = autoExpand;
         this.CreatePool(count, container.transform);

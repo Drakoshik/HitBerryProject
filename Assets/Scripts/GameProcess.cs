@@ -11,8 +11,6 @@ using Sequence = DG.Tweening.Sequence;
 
 public class GameProcess : Singleton<GameProcess>
 {
-    [SerializeField] private ObjectPooller _objectPooller;
-    
     [SerializeField] private Color[] _winColors;
     [SerializeField] private HitController _hitController;
 
@@ -42,7 +40,6 @@ public class GameProcess : Singleton<GameProcess>
 
     public override void Awake()
     {
-        // Instantiate(_objectPooller);
         base.Awake();
         ChangeFruitSet();
     }
